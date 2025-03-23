@@ -25,7 +25,7 @@ const EmailMe = () => {
     }
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/personal-site`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/personal-site`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

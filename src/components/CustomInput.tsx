@@ -9,7 +9,13 @@ type Props = InputHTMLAttributes<HTMLInputElement> & {
 const CustomInput = forwardRef<HTMLInputElement, Props>(({ placeholder, type, isRequired }: Props, ref) => {
   return (
     <fieldset className="w-full rounded-sm bg-slate-800 px-4 py-2">
-      <input className="focus:outline-none" placeholder={placeholder} ref={ref} type={type} required={isRequired} />
+      <input
+        className="w-full focus:outline-none"
+        placeholder={placeholder}
+        ref={ref}
+        type={type}
+        required={isRequired}
+      />
     </fieldset>
   );
 });
